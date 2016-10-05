@@ -69,7 +69,7 @@
   <created_date>2016&#x2f;03&#x2f;23 09&#x3a;12&#x3a;48.572</created_date>
   <modified_user>-</modified_user>
   <modified_date>2016&#x2f;03&#x2f;23 09&#x3a;12&#x3a;48.572</modified_date>
-    <key_for_session_key/>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA&#x3d;</key_for_session_key>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -81,8 +81,8 @@
     <access>Native</access>
     <database>i2b2Census</database>
     <port>2001</port>
-    <username>&#x21;mcneeleyta</username>
-    <password>Encrypted 2be98afc839ca9388a70fa77cd297fb88</password>
+    <username/>
+    <password>Encrypted </password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -103,6 +103,49 @@
   <order>
   <hop> <from>Fixed file input</from><to>Table output</to><enabled>Y</enabled> </hop>
   </order>
+  <step>
+    <name>Fixed file input</name>
+    <type>FixedInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>C&#x3a;&#x5c;WorkArea&#x5c;I2B2_project&#x5c;Projects&#x5c;geocoding&#x5c;ACS_Census_data&#x5c;census_data&#x5c;acs_20135a&#x5c;zipped_folders&#x5c;cbsa_310&#x5c;ge.00_file_m.dat</filename>
+    <line_width>36726</line_width>
+    <header>N</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <line_feed>Y</line_feed>
+    <parallel>N</parallel>
+    <file_type>NONE</file_type>
+    <encoding/>
+    <add_to_result_filenames>N</add_to_result_filenames>
+    <fields>
+      <field>
+        <name>file_string</name>
+        <type>String</type>
+        <format/>
+        <trim_type>none</trim_type>
+        <currency/>
+        <decimal/>
+        <group/>
+        <width>36726</width>
+        <length>36726</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>544</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
   <step>
     <name>Table output</name>
     <type>TableOutput</type>
@@ -145,49 +188,6 @@
  <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
       <xloc>544</xloc>
       <yloc>192</yloc>
-      <draw>Y</draw>
-      </GUI>
-    </step>
-
-  <step>
-    <name>Fixed file input</name>
-    <type>FixedInput</type>
-    <description/>
-    <distribute>N</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-         <partitioning>
-           <method>none</method>
-           <schema_name/>
-           </partitioning>
-    <filename>C&#x3a;&#x5c;WorkArea&#x5c;I2B2_project&#x5c;Projects&#x5c;geocoding&#x5c;ACS_Census_data&#x5c;census_data&#x5c;acs_20135a&#x5c;zipped_folders&#x5c;cbsa_310&#x5c;ge.00_file_m.dat</filename>
-    <line_width>36726</line_width>
-    <header>N</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
-    <line_feed>Y</line_feed>
-    <parallel>N</parallel>
-    <file_type>NONE</file_type>
-    <encoding/>
-    <add_to_result_filenames>N</add_to_result_filenames>
-    <fields>
-      <field>
-        <name>file_string</name>
-        <type>String</type>
-        <format/>
-        <trim_type>none</trim_type>
-        <currency/>
-        <decimal/>
-        <group/>
-        <width>36726</width>
-        <length>36726</length>
-        <precision>-1</precision>
-      </field>
-    </fields>
-     <cluster_schema/>
- <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
-      <xloc>544</xloc>
-      <yloc>32</yloc>
       <draw>Y</draw>
       </GUI>
     </step>
