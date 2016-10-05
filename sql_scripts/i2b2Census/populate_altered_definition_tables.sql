@@ -1,3 +1,4 @@
+--you will need to run this for each of the table groupings 1-6. Unfortunately it is hard coded right now. 
 select * from [I2B2Census].[acs_20135a_definition]
 
 update [I2B2Census].[acs_20135a_definition]
