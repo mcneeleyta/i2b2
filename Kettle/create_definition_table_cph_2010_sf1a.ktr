@@ -82,8 +82,8 @@
     <access>Native</access>
     <database>i2b2Census</database>
     <port>2001</port>
-    <username>&#x21;mcneeleyta</username>
-    <password>Encrypted 2be98afc839ca9388a70fa77cd297fb88</password>
+    <username/>
+    <password>Encrypted </password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
